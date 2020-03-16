@@ -1,0 +1,2 @@
+# property.te
+type tee_prop, property_type;

@@ -18,3 +18,8 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
 BOARD_SEPOLICY_DIRS += \
     device/exynos/sepolicy/tee/teegris/vendor
 endif
+
+ifeq ($(BOARD_SEPOLICY_TEE_FLAVOR),mobicore)
+BOARD_SEPOLICY_DIRS += \
+    device/exynos/sepolicy/tee/mobicore/vendor
+endif
